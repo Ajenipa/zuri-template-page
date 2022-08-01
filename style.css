@@ -1,0 +1,429 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap');
+body{
+    font-family: 'Lato', sans-serif;
+    background-color: white;
+    box-sizing: border-box;
+    max-width: 100%;
+    margin: auto;
+}
+.container-lower-2{
+    align-content: center;
+}
+.web-template{  
+    padding-left: 120px;
+    margin-bottom: -80px;
+}
+.web-template .heading2{  
+    margin-left: -15px;
+    margin-bottom: -5px;
+    font-weight: bold;
+}
+.web-template .small-text{
+    margin-bottom: -40px;
+    margin-left: -15px;
+    color: #6E6E6E;
+}
+ .img{
+  background-color:white;
+
+  margin-top: -5px;
+  padding-left: 3px;
+ }
+h2{
+    padding-right: 120px;
+    margin-right: 350px;
+    /* Heading/H4 - Bold */
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    color: #000000;
+}
+.container1{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;    
+    margin-left: -25px;
+    
+}
+.container1 .bold-text{
+    font-weight: bold;
+}
+.container1 .small-text{
+    color: #6E6E6E;
+}
+
+.left-image{ 
+    flex:1;
+    box-shadow: 0px 10px 20px rgba(134, 45, 255, 0.2);
+    align-content: center;
+    margin-left: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.right-image{  
+    flex:1;
+    box-shadow: 0px 10px 20px rgba(134, 45, 255, 0.2);
+    align-content: center;
+    margin-right:  50px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.container2{
+    display: flex;
+    align-items: center;
+    padding-left: 120px;  
+    padding-top: 50px;   
+    margin-left: -25px; 
+}
+.container2 .bold-text{
+  
+    font-weight: bold;
+}
+.container2 .small-text{
+    color: #6E6E6E;
+}
+.top-explore-button{
+    background-color:#ffff;
+    color: #540D6E;
+    border:  #540D6E 1.5px solid;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 30px;
+    margin-left: 1080px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+.bottom-explore-button{
+    background-color:#ffff;
+    color: #540D6E;
+    border:  #540D6E 1.5px solid;
+    border-radius: 3px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+    margin-left: 590px;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+    cursor: pointer;
+}
+ 
+ /* For Desktop View */
+   
+  /* For Tablet View */
+  @media screen and (min-device-width: 768px)
+  and (max-device-width: 1024px) {
+    .container1 {
+        flex-direction: column;
+      }
+      .container2 {
+        flex-direction: column;
+      }
+      .web-template{  
+        padding-left: 120px;
+        margin-bottom: -80px;
+        margin-left:240px
+    }
+    .web-template h2{  
+        margin-left: 15px;
+    }
+  }
+   
+  /* For Mobile Portrait View */
+  @media screen and (max-device-width: 480px)
+  and (orientation: portrait) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+  }
+   
+  /* For Mobile Landscape View */
+  @media screen and (max-device-width: 640px)
+  and (orientation: landscape) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+  }
+   
+  /* For Mobile Phones Portrait or Landscape View */
+  @media screen and (max-device-width: 640px) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+  }
+   
+  /* For iPhone 4 Portrait or Landscape View */
+  @media screen and (min-device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+      .top-explore-button{
+        margin-top: 8px;
+        margin-left: 350px;
+      }
+      .bottom-explore-button{
+        margin-left: 170px;
+      }
+      .web-template{  
+        padding-left: 20px;
+        margin-bottom: 50px;
+    }
+    .web-template h2{ 
+        white-space: nowrap;
+    }
+      .left-image{ 
+        box-shadow: 0px 10px 20px rgba(134, 45, 255, 0.2);
+        align-content: center;
+        padding-left: 60px;
+        padding-right: 20px;  
+    }
+  }
+   
+  /* For iPhone 5 Portrait or Landscape View */
+  @media (device-height: 568px) and (device-width: 320px)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+  }
+   
+  /* For iPhone 6 and 6 plus Portrait or Landscape View */
+  @media (min-device-height: 667px) and (min-device-width: 375px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+  }
+  /**sam**/
+
+  @media (min-device-height: 915px) and (min-device-width: 412px)
+  and (-webkit-min-device-pixel-ratio: 3) {
+    .container1 {
+        flex-direction: column;
+      }
+    .container2 {
+        flex-direction: column;
+      }
+      .top-explore-button{
+        margin-top: 8px;
+        margin-left: 100px;
+      }
+  }
+
+  /** top**/
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+
+.template-web-for{ 
+    position: absolute;
+    width: 907px;
+    height: 144px;
+    left: 267px;
+    top: 20px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 72px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+h5{
+    position: absolute;
+    width: 1138px;
+    height: 96px;
+    left: 151px;
+    top: 170px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    text-align: center;
+    color: #FFFFFF;
+}
+
+.input-icons i {
+    position: absolute;
+    left: 8.33%;
+    right: 58%;
+    top: 390px;
+    bottom: 7.02%;
+}
+  
+.input-icons {
+    width: 100%;
+    margin-bottom: 10px;
+}
+  
+.icon {
+    color:#939393;
+}
+  
+.input-field {
+    display: flex;
+flex-direction: column;
+align-items: flex-start;
+padding: 0px 35px;
+gap: 8px;
+position: absolute;
+width: 907px;
+height: 60px;
+left: 267px;
+top: 368px;
+background-color:transparent;
+outline: none;
+border: solid #939393;
+color: #FFFFFF;
+}
+
+#h52{
+    width: 261px;
+   
+    left: 598px;
+    top: 385px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+   
+    text-align: center;
+    color: #FFFFFF;
+}
+.search-btn{
+    border: none;
+    margin-right:10px;
+}
+.all-search-btn {
+  margin-top: -200px;
+  margin-left: 450px;
+  display: flex;
+
+
+}
+
+#search1{
+    /* display: flex; */
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 104px;
+    width: 184px;
+    height: 68px;
+    top: 500px;
+    right: 45%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #080808;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#search2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 104px;
+    width: 184px;
+    height: 68px;
+    top: 500px;
+    left: 56.2%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    flex: none;
+    order: 1;
+    flex-grow: 0;
+    color: #080808;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#search3{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 104px;
+    width: 184px;
+    height: 68px;
+    top: 500px;
+    margin-top: 80px;
+    margin-left: -388px;
+    left: 73.5%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    order: 2;
+    flex-grow: 0;
+    color: #080808;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+#search4{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 104px;
+    width: 184px;
+    height: 68px;
+    top: 590px;
+    left: 56.2%;
+    background: #FFFFFF;
+    border-radius: 8px;
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+    color: #080808;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 28px;
+}
+
+.lower-container{
+  margin-top: 100px;
+}
